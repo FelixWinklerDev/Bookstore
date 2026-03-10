@@ -1,29 +1,39 @@
 function getBookTemplate(index) {
   return `
-<div>
+<div id="mother-div>
   <section>
-    <h2></h2>
+    <h2>${books.name[index]}</h2>
   </section>
   <section>
     <img src="./assets/icons/openclipart-vectors-book-2022461_640.png" alt="Buchkarikatur">
   </section>
   <section>
-    <p></p>
+    <p>${books.price[index] + ' €'}</p>
       <section>
-        <p></p>
+        <p>${books.likes[index]}</p>
         <button><img src="" alt=""></button>
       </section>
-      <section> //author, publishing date, genre
-  
-      </section>
-      <section> // commentary
-  
-      </section>
-      <section>// write comment & submit
-        <input type="text">
-        <button><img src="" alt=""></button>
-      </section>
-    </section>
-  </div>
+  </section>
+  <section>
+  <h4>Author:</h4>
+  <h4>Veröffentlichungsjahr:</h4>
+  <h4>Genre:</h4>
+  </section>
+  <section>
+  <p>${books.author[index]}</p>
+  <p>${books.publishedYear[index]}</p>
+  <p>${books.genre[index]}</p>
+  </section>
+  <section>
+      <input type="text">
+      <button><img src="./assets/icons/openclipart-vectors-paper-plane-147602_640.png" alt="papierflieger"></button>
+  </section>
+</div>
     `;
+}
+
+function formatToCurrency(amount) {
+  let formatted = amount.toFixed(2);
+  let dotReplace = formatted.replace('.', ',');
+  return dotReplace + '€';
 }
