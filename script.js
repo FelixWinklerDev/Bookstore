@@ -192,3 +192,12 @@ let books = [
     ],
   },
 ];
+
+function renderBook() {
+  let contentRef = document.getElementById('content');
+  contentRef.innerHTML = '';
+
+  for (let indexNote = 0; indexNote < notes.length; indexNote++) {
+    contentRef.innerHTML += getNoteTemplate(indexNote);
+  }
+}

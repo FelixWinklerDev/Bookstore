@@ -1,5 +1,27 @@
 html {
-  margin: 0;
   scroll-behavior: smooth;
   font-size: 62.5%;
+}
+
+body {
+  background-color: #05171e;
+}
+
+p {
+  font-size: 1.6rem;
+  color: white;
+}
+
+h1 {
+  font-size: 4.2rem;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
 }
