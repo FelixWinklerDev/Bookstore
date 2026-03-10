@@ -9,11 +9,13 @@ body {
 
 p {
   font-size: 1.6rem;
+  font-family: 'Raleway-Medium';
   color: white;
 }
 
 h1 {
   font-size: 4.2rem;
+  font-family: 'Rubik-Extrabold';
   color: white;
 }
 
