@@ -193,6 +193,10 @@ let books = [
   },
 ];
 
+function init() {
+  renderBooks();
+}
+
 function renderBooks() {
   let contentRef = document.getElementById('content');
   contentRef.innerHTML = '';
