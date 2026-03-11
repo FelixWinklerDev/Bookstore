@@ -18,13 +18,13 @@ function getBookTemplate(index) {
       </section>
       <div class="seperator"></div>
       <section>
-        <table class="table-flex">
+        <table>
           <tr class="table-flex">
             <th>Author:</th>
             <td>${books[index].author}</td>
           </tr>
           <tr class="table-flex">
-            <th>Veröffentluchungsjahr:</th>
+            <th>Veröffentlichungsjahr:</th>
             <td>${books[index].publishedYear}</td>
           </tr>
           <tr class="table-flex">

@@ -51,7 +51,6 @@
 
 .table-flex {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
@@ -69,4 +68,10 @@
 .like-btn {
   background-color: rgba(0, 0, 0, 0);
   border-width: 0;
+}
+
+.commentarys {
+  max-height: 200px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
 }

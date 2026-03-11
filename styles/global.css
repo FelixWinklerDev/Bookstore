@@ -8,37 +8,47 @@ body {
 }
 
 p {
+  margin: 1rem;
   font-size: 1.6rem;
   font-family: 'Raleway-Medium';
   color: white;
 }
 
 h1 {
+  margin: 1rem, ;
   font-size: 4.2rem;
   font-family: 'Rubik-Extrabold';
   color: white;
 }
 
 h2 {
+  margin: 1rem;
   font-size: 3.4rem;
   font-family: 'Rubik-Extrabold';
   color: white;
   text-align: center;
 }
 
+table {
+  width: 100%;
+}
+
 th {
+  margin: 1rem;
   font-size: 1.6rem;
   font-family: 'Rubik-Extrabold';
   color: white;
 }
 
 td {
+  margin: 1rem;
   font-size: 1.6rem;
   font-family: 'Rubik-Medium';
   color: white;
 }
 
 h3 {
+  margin: 1rem;
   font-size: 2.2rem;
   font-family: 'Rubik-Extrabold';
   color: white;
