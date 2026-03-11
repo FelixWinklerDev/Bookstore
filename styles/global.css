@@ -19,6 +19,31 @@ h1 {
   color: white;
 }
 
+h2 {
+  font-size: 3.4rem;
+  font-family: 'Rubik-Extrabold';
+  color: white;
+  text-align: center;
+}
+
+th {
+  font-size: 1.6rem;
+  font-family: 'Rubik-Extrabold';
+  color: white;
+}
+
+td {
+  font-size: 1.6rem;
+  font-family: 'Rubik-Medium';
+  color: white;
+}
+
+h4 {
+  font-size: 2.2rem;
+  font-family: 'Rubik-Extrabold';
+  color: white;
+}
+
 a {
   text-decoration: none;
   cursor: pointer;

@@ -2,7 +2,7 @@ function getBookTemplate(index) {
   return `
 <div id="mother-div>
   <section>
-    <h2>${books.name[index]}</h2>
+    <h2>${books[index].name}</h2>
   </section>
   <section>
     <img src="./assets/icons/openclipart-vectors-book-2022461_640.png" alt="Buchkarikatur">

@@ -7,3 +7,67 @@
   background-color: #082129;
   border-radius: 15px;
 }
+
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
+}
+
+#mother-div {
+  height: 700px;
+  width: 500px;
+  background-color: #082129;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.price-like-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.like-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+.detail-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.comment-flex {
+  display: flex;
+}
+
+.seperator {
+  height: 5px;
+  width: 100%;
+  background-color: #003e9c;
+}
+
+#like-btn {
+  background-color: rgba(0, 0, 0, 0);
+  border-width: 0;
+}
