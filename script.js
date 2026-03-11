@@ -193,7 +193,7 @@ let books = [
   },
 ];
 
-function renderBook() {
+function renderBooks() {
   let contentRef = document.getElementById('content');
   contentRef.innerHTML = '';
 

@@ -10,16 +10,17 @@
 
 #content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 200px;
-  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   flex-wrap: wrap;
+  gap: 50px;
 }
 
 #mother-div {
-  height: 700px;
+  height: 650px;
   width: 500px;
   background-color: #082129;
   border-radius: 15px;
