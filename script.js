@@ -205,3 +205,15 @@ function renderBooks() {
     contentRef.innerHTML += getBookTemplate(index);
   }
 }
+
+function addComment(index) {
+  let commentInputRef = document.getElementById(`comment-input${index}`);
+  let commentInput = commentInputRef.value;
+  if (commentInputRef === '') return;
+  books[index].comments.push({
+    name: 'gitGud',
+    comment: commentInput,
+  });
+  renderBooks();
+  commentInputRef.value = '';
+}

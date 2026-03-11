@@ -28,6 +28,12 @@
   gap: 30px;
 }
 
+.showcase-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .price-like-flex {
   display: flex;
   justify-content: space-around;
@@ -57,6 +63,8 @@
 
 .comment-flex {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .seperator {

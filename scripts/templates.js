@@ -5,7 +5,7 @@ function getBookTemplate(index) {
         <h2>${books[index].name}</h2>
       </section>
       <div class="seperator"></div>
-      <section>
+      <section class="showcase-flex">
         <img class="showcase-pic" src="./assets/icons/openclipart-vectors-book-2022461_640.png" alt="Buchkarikatur">
       </section>
       <div class="seperator"></div>
@@ -41,8 +41,8 @@ function getBookTemplate(index) {
         </section>
       </section>
       <section class="comment-flex">
-        <input id="comment-input${index}" type="text">
-        <button id="submit-comment" onclick="addComment(${index})"><img class="paper-plane"
+        <input id="comment-input${index}" placeholder="Hier kommentieren..." type="text">
+        <button id="submit-comment"  onclick="addComment(${index})"><img class="paper-plane"
             src="./assets/icons/openclipart-vectors-paper-plane-147602_640.png" alt="papierflieger"></button>
       </section>
     </div>
