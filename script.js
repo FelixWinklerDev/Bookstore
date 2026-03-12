@@ -194,6 +194,7 @@ let books = [
 ];
 
 function init() {
+  loadFromLocalStorage();
   renderBooks();
 }
 
@@ -213,11 +214,12 @@ function addComment(index) {
   let commentInput = commentInputRef.value;
   if (commentInputRef === '') return;
   books[index].comments.push({
-    name: 'Bücherwurm911',
+    name: 'Gast',
     comment: commentInput,
   });
   renderBooks();
   commentInputRef.value = '';
+  saveToLocalStorage();
 }
 
 function toggleLike(index) {
@@ -230,6 +232,7 @@ function toggleLike(index) {
     book.liked = true;
   }
   renderBooks();
+  saveToLocalStorage();
 }
 
 function getLikeImage(index) {
@@ -237,5 +240,16 @@ function getLikeImage(index) {
     return './assets/icons/favorite-liked.png';
   } else {
     return './assets/icons/favorite.png';
+  }
+}
+
+function saveToLocalStorage() {
+  localStorage.setItem('books', JSON.stringify(books));
+}
+
+function loadFromLocalStorage() {
+  let myBooks = localStorage.getItem('books');
+  if (myBooks) {
+    books = JSON.parse(myBooks);
   }
 }
