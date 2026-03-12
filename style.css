@@ -83,3 +83,15 @@
   overflow-y: scroll;
   scrollbar-width: thin;
 }
+
+.single-comment {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.height-correction {
+  height: 145px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

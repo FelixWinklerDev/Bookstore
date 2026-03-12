@@ -60,7 +60,7 @@ function formatToCurrency(amount) {
 function renderComments(bookIndex) {
   let allComments = books[bookIndex].comments;
   if (allComments.length == 0) {
-    return '<p>Hier ist totenstille... Willst du es ändern?</p>';
+    return '<div class="height-correction"><p>Hier ist totenstille... Willst du es ändern?</p></div>';
   }
   commentRef = '';
   for (let i = 0; i < allComments.length; i++) {
@@ -68,8 +68,7 @@ function renderComments(bookIndex) {
         <div class="single-comment">
         <h3>${allComments[i].name}:</h3> 
         <p>${allComments[i].comment}</p>
-      </div>
-  `;
+      </div>`;
   }
   return commentRef;
 }
