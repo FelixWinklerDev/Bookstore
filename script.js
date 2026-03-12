@@ -202,7 +202,9 @@ function renderBooks() {
   contentRef.innerHTML = '';
 
   for (let index = 0; index < books.length; index++) {
-    contentRef.innerHTML += getBookTemplate(index);
+    let likeImage = getLikeImage(index);
+
+    contentRef.innerHTML += getBookTemplate(index, likeImage);
   }
 }
 
@@ -211,9 +213,29 @@ function addComment(index) {
   let commentInput = commentInputRef.value;
   if (commentInputRef === '') return;
   books[index].comments.push({
-    name: 'gitGud',
+    name: 'Bücherwurm911',
     comment: commentInput,
   });
   renderBooks();
   commentInputRef.value = '';
+}
+
+function toggleLike(index) {
+  let book = books[index];
+  if (book.liked) {
+    book.likes--;
+    book.liked = false;
+  } else {
+    book.likes++;
+    book.liked = true;
+  }
+  renderBooks();
+}
+
+function getLikeImage(index) {
+  if (books[index].liked === true) {
+    return './assets/icons/favorite-liked.png';
+  } else {
+    return './assets/icons/favorite.png';
+  }
 }

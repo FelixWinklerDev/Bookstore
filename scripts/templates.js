@@ -1,4 +1,4 @@
-function getBookTemplate(index) {
+function getBookTemplate(index, likeImage) {
   return `
     <div id="mother-div">
       <section>
@@ -13,7 +13,9 @@ function getBookTemplate(index) {
         <p>${formatToCurrency(books[index].price)}</p>
         <section class="like-flex">
           <p>${books[index].likes}</p>
-          <button class="like-btn" onclick="liked(${index})"><img class="like" src="./assets/icons/favorite.png" alt=""></button>
+          <button class="like-btn" onclick="toggleLike(${index})">
+        <img id="check-like${index}" class="like" src="${likeImage}" alt="">
+    </button>
         </section>
       </section>
       <div class="seperator"></div>
@@ -69,6 +71,5 @@ function renderComments(bookIndex) {
       </div>
   `;
   }
-
   return commentRef;
 }
