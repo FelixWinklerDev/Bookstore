@@ -20,12 +20,13 @@
 }
 
 #mother-div {
+  height: 855px;
   width: 500px;
   background-color: #082129;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 28px;
 }
 
 .showcase-flex {
@@ -94,4 +95,35 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media(max-width: 880px) {
+  .header-wrapper {
+    flex-direction: column;
+    padding: 1rem 0 1rem 0;
+    ;
+    gap: 0;
+  }
+}
+
+@media(max-width: 600px) {
+  #mother-div {
+    width: 400px;
+  }
+}
+
+@media(max-width: 500px) {
+  #mother-div {
+    width: 300px;
+  }
+
+  .sub-title {
+    text-align: center;
+  }
+}
+
+@media(max-width: 400px) {
+  #mother-div {
+    width: 280px;
+  }
 }

@@ -209,6 +209,12 @@ function renderBooks() {
   }
 }
 
+function formatToCurrency(amount) {
+  let formatted = amount.toFixed(2);
+  let dotReplace = formatted.replace('.', ',');
+  return dotReplace + '€';
+}
+
 function addComment(index) {
   let commentInputRef = document.getElementById(`comment-input${index}`);
   let commentInput = commentInputRef.value;

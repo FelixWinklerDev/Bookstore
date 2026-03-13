@@ -51,12 +51,6 @@ function getBookTemplate(index, likeImage) {
     `;
 }
 
-function formatToCurrency(amount) {
-  let formatted = amount.toFixed(2);
-  let dotReplace = formatted.replace('.', ',');
-  return dotReplace + '€';
-}
-
 function renderComments(bookIndex) {
   let allComments = books[bookIndex].comments;
   if (allComments.length == 0) {
